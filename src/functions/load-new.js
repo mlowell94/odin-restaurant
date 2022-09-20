@@ -3,7 +3,6 @@ import genHome from '../pages/home';
 import genMenu from '../pages/menu';
 import dumpMain from './dump';
 
-// function for animating an old main falling out and la new one falling in.
 
 const loadNew = function(request) {
     const main = document.querySelector('.main');
@@ -12,7 +11,6 @@ const loadNew = function(request) {
         main.setAttribute('id', 'waiting');
     }, 900)
     setTimeout(function() {
-        console.log(request);
         dumpMain()
         if(request == 'home') {
             genHome();
