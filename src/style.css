@@ -20,7 +20,7 @@ body {
 
 .l-side {
     pointer-events: none;
-    height: 100vh;
+    height: 105vh;
     width: 10%;
     background: url(assets/sidebar2.png);
     background-size: 100%;
@@ -30,7 +30,7 @@ body {
 
 .r-side {
     pointer-events: none;
-    height: 100vh;
+    height: 105vh;
     width: 10%;
     background: url(assets/sidebar1.png);
     background-size: 100%;
