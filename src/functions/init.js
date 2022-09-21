@@ -1,6 +1,7 @@
 import movingMushroom from '../assets/mushroom-icon-active.gif';
 import genHome from "../pages/home"
 import  bindEvents from './nav-events';
+import resizeEvent from './resize-event';
 
 
 // Creates content that will always be on the page, and initiates animations that are only going to fire once.
@@ -70,6 +71,7 @@ function createMain() {
     setTimeout(function() {unorderedList.setAttribute('id','loaded')}, 1000);
     bindEvents();
     genHome();
+    resizeEvent();
 } 
 
 export { createMain }

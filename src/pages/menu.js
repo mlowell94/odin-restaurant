@@ -10,7 +10,13 @@ const genMenu = function() {
     const main = document.querySelector('.main');
 
     main.style.width = '75vw';
-    main.style.display = 'grid';
+
+    if(window.innerWidth < 1240) {
+        main.style.display = 'flex'
+    } else {
+        main.style.display = 'grid';
+    }
+    
     main.style.gridTemplateColumns = '1fr 1fr 1fr';
     main.style.gridTemplateRows = '1fr 9fr 9fr 1fr';
     main.style.gridGap = '3px';
